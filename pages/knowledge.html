@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knowledge</title>
+    <meta name="description" content="Expand your knowledge and learn to earn from crypto with Linity's.">
+    <link rel="stylesheet" href="../css/1_x00.css">
+    
+    <style>
+
+/* Footer Styles */
+.foote { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #211E25;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #3b383e;
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    padding: 8px;
+    border-radius: 8px;
+    transition: color 0.2s;
+    min-width: 50px;
+}
+
+.nav-item:hover {
+    color: #783FF1;
+}
+
+.nav-item.active {
+    color: #783FF1;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 4px;
+}
+header {
+    background: #211E25;
+}
+.label {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Hide footer on larger screens (as per your existing media query) */
+@media(min-width:500px){
+    .foote{
+        display: none;
+    }
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  padding:1.5rem;
+  border-top: 1px solid #333;
+}
+
+.bottom-nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bottom-nav a.active {
+  color: white;
+  font-weight: bold;
+}
+.logo{
+    width:140px;
+    height:54px;
+    background: #3b383e;
+    border-radius: 9px;
+    
+}
+.logo img{
+    height: inherit;
+    width: inherit;
+}
+.accountBtn{
+     background:#783FF1;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 9px;
+    height:34px;
+    width: 100px;
+}
+.nav{
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+<div class="nav">
+            <div class="logo">
+                <img src="../logo.png" alt="" />
+            </div>
+            <div class="accountBtn">
+                Connect
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Broaden your knowledge</h1>
+            <p>Learn the basics, avoid mistakes, and go deeper with easy-to-follow crypto articles and guides.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="container">
+            <div class="section-header">
+                <h2>All knowledge</h2>
+                <div class="tabs">
+                    <a href="#" class="tab active">All knowledge</a>
+                    <a href="#" class="tab">Guides</a>
+                    <a href="#" class="tab">Articles</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <!-- Article 1 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="c1.png" alt="Top Telegram Games to Earn Crypto in 2025" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Article</span>
+                                <span class="badge">⏱️ 8 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Top Telegram Games to Earn Crypto in 2025: A Complete Guide</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="ghost.png" alt="NFTs for Beginners" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Article</span>
+                                <span class="badge">⏱️ 15 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">NFTs for Beginners (What Is It, Types, & Creating One)</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="gpt.png" alt="How to Improve Security for Your Crypto Wallet" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Guide</span>
+                                <span class="badge">⏱️ 20 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">How to Improve Security for Your Crypto Wallet</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="twist.png" alt="How to Claim Your Airdrop Tokens" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Guide</span>
+                                <span class="badge">⏱️ 7 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">How to Claim Your Airdrop Tokens: The Complete Guide</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="ghost.png" alt="What Is Solana Blockchain" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Article</span>
+                                <span class="badge">⏱️ 9 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">What Is Solana Blockchain? (+ Learn What Solana Is Used For)</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="circle.png" alt="How to Find New Airdrops Early" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Guide</span>
+                                <span class="badge">⏱️ 30 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">How to Find New Airdrops Early: Complete Guide 2025</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="xender.png" alt="What Is a Wallet Address" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Article</span>
+                                <span class="badge">⏱️ 8 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">What Is a Wallet Address? (Beginner's Guide + Examples)</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="card-image-container">
+                            <img src="cat.png" alt="How to Buy NFT on OpenSea" class="card-image">
+                            <div class="card-badges">
+                                <span class="badge">Guide</span>
+                                <span class="badge">⏱️ 5 mins</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">How to Buy NFT on OpenSea (OpenSea NFTs Guide 2025)</h3>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="42" fill="none" viewBox="0 0 102 54">
+                            <path fill="#fff" d="M68.525 27.577c.457-1.6 1.139-3.38 1.853-4.57.428-.167 1.428-.6 1.999-1 .714-.5.642-.285 1.07.286"/>
+                            <path fill="#fff" d="M71.531 9.963v-6.56h3.762c1.548 0 2.196.638 2.196 1.682 0 .73-.405 1.296-1.089 1.431v.072c.828.135 1.287.711 1.287 1.54 0 1.214-.909 1.835-2.475 1.835h-3.681Z"/>
+                        </svg>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13.712 10.622 20.413 3h-1.588l-5.818 6.618L8.36 3H3l7.027 10.007L3 21h1.588l6.144-6.989L15.64 21H21l-7.288-10.378Z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Discord">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 7.5c3.5-1 5.5-1 9 0m-9.5 9c3.5 1 6.5 1 10 0"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Telegram">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Reddit">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c2.648 0 5.028.826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="#" class="install-app-btn">Install App</a>
+                    </div>
+                </div>
+         
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <div class="footer-section-header" onclick="toggleDropdown(this)">
+                            <h3>Menu</h3>
+                            <span class="dropdown-arrow">^</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Opportunities</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Knowledge</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <div class="footer-section-header" onclick="toggleDropdown(this)">
+                            <h3>Company</h3>
+                            <span class="dropdown-arrow">^</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Gitbook</a></li>
+                            <li><a href="#">Partnership form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © Linity. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+   
+ 
+        <!--Footer div-->
+         <!-- Footer with SVG Icons - CSS Only Navigation -->
+   <footer class="bottom-nav">
+    <a href="../index.html" id="homepageBtn">Homepage</a>
+    <a href="dashboard.html" class="active" id="dashboardBtn">Dashboard</a>
+    <a href="opportunity.html" id="opportunity">Opportunities</a>
+    <a href="project.html" id="projects">Projects</a>
+    <a href="knowledge.html" id="knowledge">Knowledge</a>
+  </footer>
+
+    <script>
+        function toggleDropdown(element) {
+            const arrow = element.querySelector('.dropdown-arrow');
+            const ul = element.nextElementSibling;
+            
+            arrow.classList.toggle('open');
+            ul.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

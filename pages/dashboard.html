@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linity Dashboard</title>
+  <link rel="stylesheet" href="../css/10eh_7e.css" />
+  <link rel="stylesheet" href="../css/9_x09.css">
+<link rel="stylesheet" href="../css/9x_11.css">
+  <style>
+
+/* Footer Styles */
+.foote { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #211E25;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #3b383e;
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    padding: 8px;
+    border-radius: 8px;
+    transition: color 0.2s;
+    min-width: 50px;
+}
+
+.nav-item:hover {
+    color: #783FF1;
+}
+
+.nav-item.active {
+    color: #783FF1;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 4px;
+}
+
+.label {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Hide footer on larger screens (as per your existing media query) */
+@media(min-width:500px){
+    .foote{
+        display: none;
+    }
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  padding:1.5rem;
+  border-top: 1px solid #333;
+}
+
+.bottom-nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bottom-nav a.active {
+  color: white;
+  font-weight: bold;
+}
+.logo{
+    width:140px;
+    height:54px;
+    background: #3b383e;
+    border-radius: 9px;
+    
+}
+.logo img{
+    height: inherit;
+    width: inherit;
+}
+.accountBtn{
+     background:#783FF1;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 9px;
+    height:34px;
+    width: 100px;
+}
+.feed-section img{
+  display: block;
+  margin: 0 auto;
+}
+.feed-button{
+   background-color: #1c1c1c;
+   border: 1px solid #333;
+   color: white;
+}
+.communityText{
+  height:auto;
+  text-align: left;
+  padding: 1px 12px;
+}
+.joinBtn{
+  background: #783FF1;
+  color: white;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+}
+.outline-btn{
+   background-color: #1c1c1c;
+   border: 1px solid #333;
+   color: white;
+}
+</style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+                <img src="../logo.png" alt="" />
+            </div>
+            <div class="accountBtn">
+                Connect
+            </div>
+  </header>
+
+  <nav class="nav-tabs">
+    <a href="#" class="active">Quick summary</a>
+    <a href="#">My opportunities</a>
+    <a href="#">My projects</a>
+    <a href="#">Latest updates</a>
+    <a href="#">My portfolio</a>
+  </nav>
+
+  <main class="dashboard">
+    <section class="hero">
+      <h2>Elevate your crypto game with Linity’s dashboard</h2>
+      <p>Follow your favorite projects, track opportunities progress, and receive updates and wallet insights.</p>
+      <button class="try-btn">Try it now</button>
+    </section>
+
+    <section class="stats">
+      <h3>My stats:</h3>
+      <p><strong style="color: #8257df;">0</strong> projects followed</p>
+      <p><strong style="
+        color:#8654f1">0</strong> completed opportunities</p>
+    </section>
+
+    <section class="opportunities">
+      <h3>My opportunities</h3>
+      <p>Track ongoing opportunities from your favorite Web3 projects and never miss a chance to position yourself for rewards.</p>
+
+    </section>
+    <section class="empty-state">
+  <img src="../bear.png" alt="Character" class="character-img" />
+  <h3>Nothing to see here yet? Let’s change that!</h3>
+  <p>
+    Get started by following or liking some projects on Linity to discover their opportunities.
+    Want to dive right in? Head over to the Opportunities page and begin a mission to unlock your journey.
+  </p>
+  <div class="button-group">
+    <button class="outline-btn">Explore projects</button>
+    <button class="outline-btn">Explore opportunities</button>
+  </div>
+</section>
+
+<section class="latest-updates">
+  <h3>Latest updates</h3>
+  <p>
+    Always stay up to date and receive information about current missions, updates in the projects you like and about new projects in other federations.
+  </p>
+</section>
+
+
+  <section class="feed-section">
+    <div class="feed-toggle">
+      <button class="active">My feed</button>
+      <button>All updates</button>
+    </div>
+
+    <img src="../tv.png"  alt="TV Icon" class="feed-icon" />
+    <br>
+
+    <h2 class="feed-title">No personal feed yet? Let's change that.</h2>
+    <p class="feed-text">Follow or like some projects to start seeing their feeds.</p>
+    
+
+    <button class="feed-button">Explore and follow projects</button>
+  </section>
+
+<section class="community-news">
+  <h2>Community news</h2>
+  <p>Join our community activities and step up your game</p>
+
+  <div class="news-card">
+    <div class="news-image">
+      <img src="../discord.png" alt="Community Call">
+      <div class="discord-tag">DISCORD</div>
+    </div>
+    <div class="news-tags">
+      <span class="tag"><i class="icon"></i> Biweekly on Fridays</span>
+      <span class="tag"><i class="icon"></i> 12PM UTC</span>
+    </div>
+    <h3>Community Call</h3>
+    <p class="news-description">Latest news and alphas</p>
+    <button class="register-btn">Register for event</button>
+   
+  </div>
+
+  <div class="leaderboard-card">
+    <img src="../leadership.png" alt="Leaderboard Rewards">
+    <div class="communityText">
+      <h3>Zealy Community Sprint</h3>
+      <p>For registered users</p>
+      <p>prize pool: $500</p>
+      <button class="joinBtn">Join now 💰</button>
+    </div>
+  </div>
+</section>
+
+<!-- last section -->
+  </main>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="42" fill="none" viewBox="0 0 102 54">
+                            <path fill="#fff" d="M68.525 27.577c.457-1.6 1.139-3.38 1.853-4.57.428-.167 1.428-.6 1.999-1 .714-.5.642-.285 1.07.286.344.457.239 1.143.144 1.428l-1.143 4.284 6.284-2.733 1.436-1.55 3.091-8.026c.381-.262 1.2-.785 1.428-.785.286 0 .143.428.143.57 0 .143.911 2.492.911 2.693 0 1.2.533 2.595.533 2.595l-11.61 20.297-8.427 12.357c-.167.119-.5.057-.5-1.142 0-1.2.428-2.261.642-2.642l5.566-11.924c0-.119.014-.485.071-1 .057-.513.5-1.451.714-1.856l3.25-4.682c-.88.595-3.075 2.198-4.389 3.111-1.313.914-1.784.857-1.856.715-.238-.239-.239-1.057-1.21-2.428-1.214-1.714-.57-2 0-3.998Z"/>
+                            <path fill="#fff" d="m6.926 38.745 16.278-27.203h2.357l2.142 1.785v2.356c-.167-.071-.629-.128-1.143.214-.514.343-1.118 1.333-1.356 1.785l-6.14 11.353v1.356l-3.356 6.451.285.286c6.502-.286 20.063-1.893 21.206-2.007 1.428-.143 1-.572 1.642-.643.642-.071 1.214-.071 1.713.357.4.343.786.952.928 1.214h2.57c0 .214.044.885.215 1.856.171.971-.071 1.071-.214 1-.452.31-1.385.885-1.5.714-.114-.172.286-.357.5-.429L12.21 42.243l-1.214 1.214-6.354.5-.928.642-.429-.285v-.357h-.57l-.43-.286-1.142-.214-.714-.714L0 42.03c.38-.262 1.457-.957 2.713-1.642 1.257-.685 3.332-1.38 4.213-1.642Z"/>
+                        </svg>
+                    </div>
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.712 10.622 20.413 3h-1.588l-5.818 6.618L8.36 3H3l7.027 10.007L3 21h1.588l6.144-6.989L15.64 21H21l-7.288-10.378Zm-2.175 2.474-.712-.997L5.16 4.17H7.6l4.571 6.4.712.996 5.943 8.319h-2.439l-4.85-6.788Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Discord">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 7.5c3.5-1 5.5-1 9 0m-9.5 9c3.5 1 6.5 1 10 0m-1.5.5c0 1 1.5 3 2 3 1.5 0 2.833-1.667 3.5-3 .667-1.667.5-5.833-1.5-11.5-1.457-1.015-3-1.34-4.5-1.5l-1 2.5M8.5 17c0 1-1.356 3-1.832 3-1.429 0-2.698-1.667-3.333-3-.635-1.667-.476-5.833 1.428-11.5C6.151 4.485 7.545 4.16 9 4l1 2.5m0 5.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Reddit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c2.648 0 5.028.826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59-4.03 6.5-9 6.5-4.875 0-8.845-2.8-9-6.294l-1-.206a2.5 2.5 0 0 1 2.326-4.36C5.973 8.827 8.353 8 11.001 8H12Zm0 0 1-5 6 1m-9 13c.667.333 1.333.5 2 .5s1.333-.167 2-.5m4-13a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm-8.5 9a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM8 11v5M8 8v.01M12 16v-5"/>
+                                <path d="M16 16v-3a2 2 0 0 0-4 0"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="install-app-btn">Install App</a>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <div class="footer-section-header" onclick="toggleDropdown(this)">
+                            <h3>Company</h3>
+                            <span class="dropdown-arrow">^</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Gitbook</a></li>
+                            <li><a href="#">Partnership form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Linity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+        <!--Footer div-->
+         <!-- Footer with SVG Icons - CSS Only Navigation -->
+   <footer class="bottom-nav">
+    <a href="../index.html" id="homepageBtn">Homepage</a>
+    <a href="dashboard.html" class="active" id="dashboardBtn">Dashboard</a>
+    <a href="opportunity.html" id="opportunity">Opportunities</a>
+    <a href="project.html" id="projects">Projects</a>
+    <a href="knowledge.html" id="knowledge">Knowledge</a>
+  </footer>
+</body>
+</html>
